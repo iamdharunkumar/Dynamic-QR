@@ -48,3 +48,10 @@ coverage
 .cache
 tmp
 temp
+
+#agents
+
+.agents
+.agent
+.cursor
+.gemini
