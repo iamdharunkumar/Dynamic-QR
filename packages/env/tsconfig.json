@@ -1,0 +1,3 @@
+{
+  "extends": "@dynamic-qr/config/tsconfig.base.json"
+}

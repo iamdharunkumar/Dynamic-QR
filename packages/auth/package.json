@@ -1,0 +1,24 @@
+{
+  "name": "@dynamic-qr/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@dynamic-qr/db": "workspace:*",
+    "@dynamic-qr/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@dynamic-qr/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
