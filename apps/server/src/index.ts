@@ -96,6 +96,12 @@ const app = new Elysia()
      return "QR Code not found";
   })
   .get("/", () => "OK")
-  .listen(3000, () => {
+// Export the app for Vercel/Serverless usage
+export { app };
+
+// Start the server only when executed directly (e.g. bun run src/index.ts)
+if (import.meta.main) {
+  app.listen(3000, () => {
     console.log("Server is running on http://localhost:3000");
   });
+}
